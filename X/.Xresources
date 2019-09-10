@@ -1,4 +1,4 @@
-*.font: xft:Overpass Mono:size=10
+*.font: xft:Consolas:size=12
 
 Xft.dpi:                        96
 Xft.antialias:                  1
@@ -17,7 +17,7 @@ URxvt.iso14755_52:              false
 URxvt*geometry:                 65x17
 URxvt.scrollBar:                false
 URxvt*loginShell:               true
-URxvt.internalBorder:           25
+URxvt.internalBorder:           15
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:             firefox
 URxvt.matcher.button: 		1
