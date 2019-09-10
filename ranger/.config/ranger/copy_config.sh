@@ -1,0 +1,1 @@
+ranger --copy-config=scope

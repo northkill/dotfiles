@@ -178,4 +178,23 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        mode invisible
 }
+
+client.focused          #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.focused_inactive #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.unfocused        #ffffff #ffffff #ffffff #ffffff   $unfocused_border
+client.urgent           #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
+
+client.background       #ffffff
+
+exec xrandr --output HDMI2 --auto --right-of HDMI-3
+
+default_border none
+
+exec_always --no-startup-id wal -R -n
+exec_always --no-startup-id feh --bg-fill ~/res/bg1.jpg
+
+gaps inner 8
+gaps outer -3

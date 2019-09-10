@@ -18,6 +18,7 @@ Plugin 'lambdalisue/vim-fullscreen'
 Plugin 'tomlion/vim-solidity'
 Plugin 'dracula/vim'
 Plugin 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install() }}
+Plugin 'dylanaraps/wal.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -70,8 +71,8 @@ let g:indent_guides_guide_size=1
 map <A-q> {v}!par -w60<CR>
 vmap <A-q> !par -w60<CR>
 
-set directory=$XDG_CONFIG_HOME/nvim/backup
-set backupdir=$XDG_CONFIG_HOME/nvim/backup
+set directory=$HOME/.config/nvim/backup
+set backupdir=$HOME/.config/nvim/backup
 
 set list
 set listchars=tab:>\ ,eol:$
