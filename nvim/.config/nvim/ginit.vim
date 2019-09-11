@@ -8,6 +8,8 @@ call GuiClipboard()
 GuiTabline 0
 GuiPopupmenu 0
 
+colorscheme dracula
+
 let g:lightline={
             \ 'colorscheme': 'dracula',
             \ 'active': {
@@ -29,3 +31,5 @@ set guicursor=
 " highlight SignColumn guibg=dark ctermbg=0
 " highlight SignColumn guibg=gray10
 " highlight LineNR guibg=gray10
+
+highlight! link NonText DraculaSubtle
