@@ -201,6 +201,6 @@ gaps outer -3
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always redshift -P -O 3800
-exec_always ibus-daemon -d -r
+exec_always ibus-daemon -d -r --xim
 
 show_marks yes

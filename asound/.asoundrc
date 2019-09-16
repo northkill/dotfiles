@@ -1,0 +1,54 @@
+pcm.usb {
+    type hw;
+    card "HM";
+    # channels 2;
+}
+
+pcm.mixer {
+    type dmix;
+    ipc_key 1024;
+    slave.pcm usb;
+}
+
+pcm.x {
+    type plug;
+    slave.pcm mixer;
+}
+
+pcm.equal {
+    type equal;
+    slave.pcm x;
+}
+
+pcm.y {
+    type plug;
+    slave.pcm equal;
+}
+
+pcm.mpdcontrol {
+    type softvol;
+    slave.pcm y;
+    control.name MPDControl;
+    control.card 3;
+}
+
+pcm.defaultcontrol {
+    type softvol;
+    slave.pcm mixer;
+    control.name DefaultControl;
+    control.card 3;
+}
+
+pcm.!default {
+    type plug;
+    slave.pcm defaultcontrol;
+}
+
+ctl.equal {
+    type equal;
+}
+
+ctl.!default {
+    type hw;
+    card "HM";
+}
