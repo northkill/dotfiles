@@ -1,5 +1,4 @@
 call plug#begin("$HOME/.config/nvim/bundle")
-Plug 'VundleVim/Vundle.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'yuttie/hydrangea-vim'
 Plug 'drmikehenry/vim-fontsize'
@@ -15,6 +14,7 @@ Plug 'dracula/vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install() }}
 Plug 'dylanaraps/wal.vim'
 Plug 'danilo-augusto/vim-afterglow'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 set encoding=utf-8
