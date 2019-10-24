@@ -11,7 +11,7 @@ Plug 'tpope/vim-surround'
 Plug 'lambdalisue/vim-fullscreen'
 Plug 'tomlion/vim-solidity'
 Plug 'dracula/vim'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install() }}
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'dylanaraps/wal.vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'leafgarland/typescript-vim'
@@ -130,6 +130,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+let g:coc_node_path='/home/asdf/.nvm/versions/node/v12.13.0/bin/node'
 
 " highlight SignColumn guibg=NONE
 " highlight LineNR guibg=NONE guifg=
