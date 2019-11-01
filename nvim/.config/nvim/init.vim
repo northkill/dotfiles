@@ -95,7 +95,7 @@ augroup END
 
 tnoremap <s-space> <space>
 
-let @b = 'acmake --build ..'
+let @b = 'acmake --build .'
 
 command Tabt tabedit term:///bin/bash
 command Et edit term:///bin/bash
@@ -140,3 +140,12 @@ set t_Co=256
 
 set t_AB=^[[48;5;%dm
 set t_AF=^[[38;5;%dm
+
+func! ChangeDirectory(buffername)
+    let pid = substitute(a:buffername, 'term://.//', '', '')
+    let pid = substitute(pid, ':.*$', '', '')
+    let pwd = system('readlink -e /proc/' . pid . '/cwd')
+    execute 'cd' pwd
+endfunction
+
+let @c = ':call ChangeDirectory(@%)'
