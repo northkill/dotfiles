@@ -148,4 +148,6 @@ func! ChangeDirectory(buffername)
     execute 'cd' pwd
 endfunction
 
+autocmd BufNewFile,BufRead *.c setlocal tabstop=8 shiftwidth=8 softtabstop=8 noexpandtab
+
 let @c = ':call ChangeDirectory(@%)'
