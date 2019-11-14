@@ -10,17 +10,6 @@ GuiPopupmenu 0
 
 colorscheme dracula
 
-let g:lightline={
-            \ 'colorscheme': 'dracula',
-            \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ],
-            \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-            \ },
-            \ 'component_function': {
-            \   'cocstatus': 'coc#status'
-            \ },
-            \ }
-
 let g:indent_guides_auto_colors=1
 
 call lightline#init()

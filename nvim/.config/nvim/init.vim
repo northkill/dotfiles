@@ -21,7 +21,7 @@ set encoding=utf-8
 let g:indent_guides_enable_on_vim_startup=1
 set guifont=Consolas:h11:cANSI
 set guifontwide=NanumGothicCoding:h10:cDEFAULT
-colorscheme afterglow
+colorscheme default
 
 " language messages en
 
@@ -151,3 +151,7 @@ endfunction
 autocmd BufNewFile,BufRead *.c setlocal tabstop=8 shiftwidth=8 softtabstop=8 noexpandtab
 
 let @c = ':call ChangeDirectory(@%)'
+
+autocmd! FileType fzf
+autocmd  FileType fzf set laststatus=0 noshowmode noruler
+    \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
