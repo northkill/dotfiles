@@ -20,5 +20,6 @@
                 "lintTool": "golint"
             }
         }
-    }
+    },
+    "coc.preferences.jumpCommand": "tab drop"
 }
