@@ -50,6 +50,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run
 bindsym $mod+b exec firefox-developer-edition
 bindsym $mod+Pause exec i3lock --color 000000
+bindsym $mod+t exec alacritty
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
