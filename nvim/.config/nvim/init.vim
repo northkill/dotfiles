@@ -15,11 +15,14 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'dylanaraps/wal.vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'leafgarland/typescript-vim'
+Plug 'kana/vim-operator-user'
+Plug 'rhysd/vim-clang-format'
+Plug 'Shougo/vimproc.vim', { 'do' : 'make' }
 call plug#end()
 
 set encoding=utf-8
 let g:indent_guides_enable_on_vim_startup=1
-set guifont=Consolas:h11:cANSI
+set guifont=Hack:h11:cANSI
 set guifontwide=NanumGothicCoding:h10:cDEFAULT
 colorscheme default
 
