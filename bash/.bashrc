@@ -17,3 +17,5 @@ export GOPATH="${HOME}/go"
 export PATH="${PATH}:${GOPATH}/bin"
 
 source /usr/share/nvm/init-nvm.sh
+
+export PAGER=nvimpager
