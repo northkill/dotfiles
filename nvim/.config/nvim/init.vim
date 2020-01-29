@@ -134,7 +134,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-let g:coc_node_path='/home/asdf/.nvm/versions/node/v12.13.0/bin/node'
+let g:coc_node_path='/home/asdf/.nvm/versions/node/v12.14.1/bin/node'
 
 " highlight SignColumn guibg=NONE
 " highlight LineNR guibg=NONE guifg=
