@@ -4,9 +4,6 @@ font-1 = "NanumGothicCoding:pixelsize=11;2.25"
 
 monitor = ${env:MONITOR:}
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-
 fixed-center = true
 
 width = 100%
@@ -28,6 +25,7 @@ padding-left = 1
 padding-right = 1
 module-margin = 2.5
 
+modules-left = ohno 
 modules-center = title
 modules-right = cpu memory date
 
@@ -36,9 +34,6 @@ font-0 = "Consolas:pixelsize=11;2.25"
 font-1 = "NanumGothicCoding:pixelsize=11;2.25"
 
 monitor = ${env:MONITOR:}
-
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
 
 fixed-center = true
 
@@ -58,6 +53,32 @@ module-margin = 2.5
 
 modules-left = i3 
 modules-center = title
+
+[bar/leftbottom]
+font-0 = "SF Pro Text:pixelsize=11;2.25"
+font-1 = "IPAGothic:pixelsize=11;2.25"
+font-2 = "NanumGothic:pixelsize=11;2.25"
+
+monitor = ${env:MONITOR:}
+
+bottom = true
+
+width = 100%
+height = 25
+
+offset-x = 5
+
+background = #1d1f21
+foreground = #e6e6e6
+
+radius = 0.0
+
+padding-left = 4
+padding-right = 4
+module-margin = 2.5
+
+modules-left = mpdprogress
+modules-right = mpdtitle
 
 [module/i3]
 strip-wsnumbers = true
@@ -102,3 +123,31 @@ label = CPU %percentage:2%%
 type = internal/memory
 interval = 1
 label = RAM %gb_used:5% / %gb_free:5%
+
+[module/ohno]
+type = custom/text
+content-padding = 1
+content = oh no
+
+[module/mpdprogress]
+type = internal/mpd
+host = /home/asdf/.config/mpd/socket
+interval = 1
+label-song = %title%
+format-online = <bar-progress> <label-time> <icon-random> <icon-repeat> <icon-single>
+bar-progress-width = 45
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+icon-random = x
+icon-repeat = r
+icon-single = s
+toggle-on-foreground = #e6e6e6
+toggle-off-foreground = #55
+
+[module/mpdtitle]
+type = internal/mpd
+host = /home/asdf/.config/mpd/socket
+interval = 1
+label-song = %title%
+format-online = <label-song>
