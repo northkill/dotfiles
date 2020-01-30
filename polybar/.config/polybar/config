@@ -55,13 +55,15 @@ modules-left = i3
 modules-center = title
 
 [bar/leftbottom]
-font-0 = "SF Pro Text:pixelsize=11;2.25"
+font-0 = "Hack:pixelsize=11;2.25"
 font-1 = "IPAGothic:pixelsize=11;2.25"
-font-2 = "NanumGothic:pixelsize=11;2.25"
+font-2 = "NanumGothicCoding:pixelsize=11;2.25"
 
 monitor = ${env:MONITOR:}
 
 bottom = true
+
+fixed-center = true
 
 width = 100%
 height = 25
@@ -73,11 +75,12 @@ foreground = #e6e6e6
 
 radius = 0.0
 
-padding-left = 4
-padding-right = 4
+padding-left = 2
+padding-right = 2
 module-margin = 2.5
 
-modules-left = mpdprogress
+modules-left = mpdstatus
+modules-center = mpdprogress
 modules-right = mpdtitle
 
 [module/i3]
@@ -133,12 +136,21 @@ content = oh no
 type = internal/mpd
 host = /home/asdf/.config/mpd/socket
 interval = 1
-label-song = %title%
-format-online = <bar-progress> <label-time> <icon-random> <icon-repeat> <icon-single>
-bar-progress-width = 45
+format-online = <bar-progress>
+format-paused = <bar-progress>
+format-stopped = mpd stopped
+bar-progress-width = 80
 bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
+
+[module/mpdstatus]
+type = internal/mpd
+host = /home/asdf/.config/mpd/socket
+interval = 1
+format-online = <label-time> <icon-random> <icon-repeat> <icon-single>
+format-stopped =
+label-time = %elapsed:5% /%total:5%
 icon-random = x
 icon-repeat = r
 icon-single = s
@@ -149,5 +161,6 @@ toggle-off-foreground = #55
 type = internal/mpd
 host = /home/asdf/.config/mpd/socket
 interval = 1
-label-song = %title%
+label-song = %title:55:55%
 format-online = <label-song>
+format-paused = mpd paused
