@@ -99,10 +99,11 @@ augroup END
 
 tnoremap <s-space> <space>
 
-let @b = 'acmake --build .'
-
 command Tabt tabedit term:///bin/bash
 command Et edit term:///bin/bash
+command Cd call ChangeDirectory(@%)
+command -nargs=1 Cbuild ! cmake --build <args>
+command -nargs=1 Gotest ! go test <args>
 
 " Coc
 
@@ -156,8 +157,6 @@ func! ChangeDirectory(buffername)
 endfunction
 
 autocmd BufNewFile,BufRead *.c setlocal tabstop=8 shiftwidth=8 softtabstop=8 noexpandtab
-
-let @c = ':call ChangeDirectory(@%)'
 
 autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
