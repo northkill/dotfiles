@@ -77,6 +77,7 @@ set listchars=tab:>\ ,eol:$
 
 autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType go setlocal noexpandtab tabstop=8 shiftwidth=8
 " hi CursorLine gui=None
 hi CursorLine ctermfg=none
 hi CursorLine ctermbg=none
