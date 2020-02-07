@@ -134,6 +134,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" Git status
+nmap <silent> gs :tab Gstatus <CR>
+
 let g:coc_node_path='/home/asdf/.nvm/versions/node/v12.14.1/bin/node'
 
 " highlight SignColumn guibg=NONE
