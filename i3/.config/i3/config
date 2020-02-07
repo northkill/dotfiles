@@ -61,10 +61,16 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
+
+# mpc shortcut
 bindsym $mod+Left exec mpc --host=${HOME}/.config/mpd/socket prev
 bindsym $mod+Down exec mpc --host=${HOME}/.config/mpd/socket stop
 bindsym $mod+Up exec mpc --host=${HOME}/.config/mpd/socket toggle
 bindsym $mod+Right exec mpc --host=${HOME}/.config/mpd/socket next
+bindsym $mod+Control+Up exec mpc --host=${HOME}/.config/mpd/socket volume +5
+bindsym $mod+Control+Down exec mpc --host=${HOME}/.config/mpd/socket volume -5
+bindsym $mod+Control+Left exec mpc --host=${HOME}/.config/mpd/socket seek -3
+bindsym $mod+Control+Right exec mpc --host=${HOME}/.config/mpd/socket seek +3
 
 # move focused window
 bindsym $mod+Shift+j move left
