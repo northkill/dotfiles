@@ -17,6 +17,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'kana/vim-operator-user'
 Plug 'rhysd/vim-clang-format'
 Plug 'Shougo/vimproc.vim', { 'do' : 'make' }
+Plug 'lambdalisue/suda.vim'
 call plug#end()
 
 set encoding=utf-8
