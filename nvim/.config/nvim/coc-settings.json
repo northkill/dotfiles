@@ -12,13 +12,9 @@
             }
         },
         "golang": {
-            "command": "go-langserver",
-            "filetypes": ["go"],
-            "initializationOptions": {
-                "gocodeCompletionEnabled": true,
-                "diagnosticsEnabled": true,
-                "lintTool": "golint"
-            }
+            "command": "gopls",
+            "rootPatterns": ["go.mod"],
+            "filetypes": ["go"]
         }
     },
     "coc.preferences.jumpCommand": "tab drop"
