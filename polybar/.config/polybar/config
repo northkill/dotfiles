@@ -26,7 +26,6 @@ padding-right = 1
 module-margin = 2.5
 
 modules-left = ohno 
-modules-center = title
 modules-right = cpu memory date
 
 [bar/left]
@@ -115,7 +114,7 @@ date = %A, %d %B %I:%M %p
 type = internal/xwindow
 format-foreground = #e6e6e6
 format-padding = 2
-label-maxlen = 50
+label-maxlen = 150
 
 [module/cpu]
 type = internal/cpu
