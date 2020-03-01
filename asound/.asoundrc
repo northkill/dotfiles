@@ -1,6 +1,6 @@
 pcm.usb {
     type hw;
-    card "HM";
+    card "SDAC";
     # channels 2;
 }
 
@@ -50,5 +50,5 @@ ctl.equal {
 
 ctl.!default {
     type hw;
-    card "HM";
+    card "SDAC";
 }

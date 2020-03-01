@@ -189,8 +189,6 @@ client.placeholder      #332269 #332269 #ffffff #ffffff   #ffffff
 
 client.background       #ffffff
 
-exec xrandr --output HDMI-1-2 --auto --right-of HDMI-3
-
 default_border none
 
 exec_always --no-startup-id wal -R -n
