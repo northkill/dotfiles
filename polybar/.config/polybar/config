@@ -79,7 +79,7 @@ padding-right = 2
 module-margin = 2.5
 
 modules-left = mpdstatus
-modules-center = mpdprogress
+modules-center = 
 modules-right = mpdtitle
 
 [module/i3]
