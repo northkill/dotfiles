@@ -29,14 +29,14 @@ pcm.mpdcontrol {
     type softvol;
     slave.pcm y;
     control.name MPDControl;
-    control.card 3;
+    # control.card 3;
 }
 
 pcm.defaultcontrol {
     type softvol;
     slave.pcm mixer;
     control.name DefaultControl;
-    control.card 3;
+    # control.card 3;
 }
 
 pcm.!default {
