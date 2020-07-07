@@ -19,3 +19,5 @@ export PATH="${PATH}:${GOPATH}/bin"
 source /usr/share/nvm/init-nvm.sh
 
 export PAGER=nvimpager
+
+source /opt/asdf-vm/asdf.sh
