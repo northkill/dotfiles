@@ -18,6 +18,7 @@ Plug 'kana/vim-operator-user'
 Plug 'rhysd/vim-clang-format'
 Plug 'Shougo/vimproc.vim', { 'do' : 'make' }
 Plug 'lambdalisue/suda.vim'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 set encoding=utf-8
