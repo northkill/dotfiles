@@ -40,7 +40,7 @@ bindsym $mod+Return exec nvim-qt
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec jgmenu_run
+bindsym $mod+d exec dmenu_run -fn "Roboto-12"
 bindsym $mod+b exec firefox-developer-edition
 bindsym $mod+Pause exec i3lock --color 000000
 bindsym $mod+t exec alacritty
@@ -203,5 +203,6 @@ gaps outer -3
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always redshift -P -O 5200
 exec_always ibus-daemon -d -r --xim
+
 
 show_marks yes

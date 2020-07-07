@@ -53,6 +53,10 @@ module-margin = 2.5
 modules-left = i3 
 modules-center = title
 
+# tray-position = right
+# tray-offset-x = -6
+# tray-offset-y = -1
+
 [bar/leftbottom]
 font-0 = "Hack:pixelsize=11;2.25"
 font-1 = "IPAGothic:pixelsize=11;2.25"
@@ -80,7 +84,10 @@ module-margin = 2.5
 
 modules-left = mpdstatus
 modules-center = 
-modules-right = mpdtitle
+# modules-right = mpdtitle
+
+# wm-restack = i3
+# override-redirect = true
 
 [module/i3]
 strip-wsnumbers = true
